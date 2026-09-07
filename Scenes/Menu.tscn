@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://c1cfycaxb37qk"]
+
+[ext_resource type="Script" uid="uid://b07r5dbnay4wn" path="res://Scripts/ExitMenu.cs" id="1_3kf3n"]
+
+[node name="Menu" type="Control" unique_id=417412653]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="." unique_id=1739430203]
+layout_mode = 0
+offset_left = 370.0
+offset_top = 182.0
+offset_right = 732.0
+offset_bottom = 278.0
+theme_override_font_sizes/font_size = 70
+text = "ITERATION"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=1608840263]
+layout_mode = 0
+offset_left = 447.0
+offset_top = 338.0
+offset_right = 660.0
+offset_bottom = 400.0
+theme_override_font_sizes/font_size = 27
+text = "Jogar"
+script = ExtResource("1_3kf3n")
