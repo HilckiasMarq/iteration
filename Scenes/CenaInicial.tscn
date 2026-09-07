@@ -1,6 +1,42 @@
 [gd_scene format=3 uid="uid://cqjnjkh0rslwj"]
 
-[ext_resource type="Script" uid="uid://d16j0sgru6uit" path="res://Resources/Parts/PartData.cs" id="1_ntu8n"]
+[ext_resource type="Script" uid="uid://dr1t0sygqevh6" path="res://Scripts/Player/Player.cs" id="1_213n1"]
 
-[node name="Node3D" type="Node3D" unique_id=618338215]
-script = ExtResource("1_ntu8n")
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_f1574"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_f1574"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_texfu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ub53g"]
+size = Vector3(1.8085403, 1, 3.2440948)
+
+[node name="Node3D" type="Node3D" unique_id=1092966638]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=974394838]
+transform = Transform3D(1, 0, 0, 0, 0.8159766, 0.5780849, 0, -0.5780849, 0.8159766, 0, 4.2463045, 6.2544217)
+fov = 67.6
+
+[node name="Player" type="CharacterBody3D" parent="." unique_id=792758027]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.6542537, 0)
+collision_layer = 2
+script = ExtResource("1_213n1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=2113153929]
+shape = SubResource("CapsuleShape3D_f1574")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Player" unique_id=630542613]
+mesh = SubResource("CapsuleMesh_f1574")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=175607456]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1298584012]
+transform = Transform3D(12.089865, 0, 0, 0, 1, 0, 0, 0, 10.13473, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=1005459586]
+transform = Transform3D(1.8255935, 0, 0, 0, 1, 0, 0, 0, 3.2787666, 0.003493612, -0.05528736, 0.013342856)
+mesh = SubResource("BoxMesh_texfu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1527738509]
+transform = Transform3D(1.000001, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("BoxShape3D_ub53g")
