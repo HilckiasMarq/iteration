@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://b2kgu2ouyj3se"]
+
+[ext_resource type="Script" uid="uid://dro0rwtxeutpp" path="res://Scripts/Settings/Back.cs" id="1_4hxq3"]
+
+[node name="Settings" type="Control" unique_id=105989732]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="." unique_id=1678000849]
+layout_mode = 0
+offset_left = 375.0
+offset_top = 36.0
+offset_right = 713.0
+offset_bottom = 121.0
+theme_override_font_sizes/font_size = 49
+text = "Configurações"
+
+[node name="Button" type="Button" parent="." unique_id=655878285]
+layout_mode = 0
+offset_left = 41.0
+offset_top = 558.0
+offset_right = 175.0
+offset_bottom = 623.0
+theme_override_font_sizes/font_size = 37
+text = "Back"
+script = ExtResource("1_4hxq3")

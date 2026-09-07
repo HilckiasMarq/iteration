@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://cqjnjkh0rslwj"]
 
+<<<<<<< HEAD
 [ext_resource type="Script" uid="uid://dr1t0sygqevh6" path="res://Scripts/Player/Player.cs" id="1_213n1"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_f1574"]
@@ -40,3 +41,6 @@ mesh = SubResource("BoxMesh_texfu")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1527738509]
 transform = Transform3D(1.000001, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_ub53g")
+=======
+[node name="Node3D" type="Node3D" unique_id=618338215]
+>>>>>>> 1bd649e332b204b2c5214c99830dc56287943525
