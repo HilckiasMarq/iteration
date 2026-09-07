@@ -1,0 +1,85 @@
+# ============================================================
+#           PADRÃO DE CÓDIGO - PROJETO GODOT + C#
+# ============================================================
+
+root = true
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+[*.cs]
+
+# Indentação
+indent_style = space
+indent_size = 4
+tab_width = 4
+
+# Chaves: nova linha
+csharp_new_line_before_open_brace = all
+
+# Espaços
+csharp_space_after_keywords_in_control_flow_statements = true
+csharp_space_after_cast = true
+csharp_space_before_parentheses = true
+
+# Usings
+dotnet_sort_system_directives_first = true
+dotnet_separate_import_directive_groups = false
+
+# Convenções de nomes
+dotnet_naming_rule.classes_should_be_pascal_case.severity = suggestion
+dotnet_naming_rule.classes_should_be_pascal_case.symbols = classes
+dotnet_naming_rule.classes_should_be_pascal_case.style = pascal_case
+dotnet_naming_symbols.classes.applicable_kinds = class
+dotnet_naming_symbols.classes.applicable_accessibilities = *
+dotnet_naming_style.pascal_case.capitalization = pascal_case
+dotnet_naming_rule.locals_should_be_camel_case.severity = suggestion
+dotnet_naming_rule.locals_should_be_camel_case.symbols = locals
+dotnet_naming_rule.locals_should_be_camel_case.style = camel_case
+dotnet_naming_symbols.locals.applicable_kinds = local, parameter
+dotnet_naming_symbols.locals.applicable_accessibilities = *
+dotnet_naming_style.camel_case.capitalization = camel_case
+dotnet_naming_rule.private_fields_should_be_underscore_camel_case.severity = suggestion
+dotnet_naming_rule.private_fields_should_be_underscore_camel_case.symbols = private_fields
+dotnet_naming_rule.private_fields_should_be_underscore_camel_case.style = underscore_camel_case
+dotnet_naming_symbols.private_fields.applicable_kinds = field
+dotnet_naming_symbols.private_fields.applicable_accessibilities = private
+dotnet_naming_style.underscore_camel_case.required_prefix = _
+dotnet_naming_style.underscore_camel_case.capitalization = camel_case
+
+# Qualidade
+csharp_style_var_when_type_is_apparent = true:suggestion
+csharp_style_var_elsewhere = false:suggestion
+csharp_style_expression_bodied_methods = false:suggestion
+csharp_style_expression_bodied_properties = true:suggestion
+
+# ============================================================
+#                       COMENTÁRIOS
+# ============================================================
+#
+# Normal:
+# // Calcula o peso total da nave.
+#
+# Importante/pessoal:
+# // [Hilckias] O peso deve ser atualizado ao remover uma peça.
+#
+# TODO:
+# // TODO: Melhorar cálculo de estabilidade.
+#
+# FIXME:
+# // FIXME: Corrigir comportamento sem peças.
+#
+# ============================================================
+#
+#   public void CalculateWeight()
+#   {
+#       float weight = 10.0f;
+#
+#       if (weight > 5.0f)
+#       {
+#           GD.Print("Nave pesada!");
+#       }
+#   }
