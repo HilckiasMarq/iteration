@@ -21,10 +21,10 @@ text = "Configurações"
 
 [node name="Button" type="Button" parent="." unique_id=655878285]
 layout_mode = 0
-offset_left = 41.0
-offset_top = 558.0
-offset_right = 175.0
-offset_bottom = 623.0
+offset_left = 32.0
+offset_top = 552.0
+offset_right = 166.0
+offset_bottom = 617.0
 theme_override_font_sizes/font_size = 37
 text = "Back"
 script = ExtResource("1_4hxq3")

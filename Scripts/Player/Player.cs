@@ -5,6 +5,30 @@ public partial class Player : CharacterBody3D
 {
 	public const float Speed = 5.0f;
 	public const float JumpVelocity = 4.5f;
+	private float sensibility = 0.002f;
+	private Node3D neck;
+
+	public override void _Ready()
+	{
+		Input.MouseMode = Input.MouseModeEnum.Captured;
+		neck = GetNode<Node3D>("Neck");
+		Input.MouseMode = Input.MouseModeEnum.Captured;
+	}
+
+	public override void _Input(InputEvent @event)
+	{
+		if (@event is InputEventMouseMotion mouseMotion)
+		{
+			RotateY(-mouseMotion.Relative.X * sensibility);
+			neck.RotateX(-mouseMotion.Relative.Y * sensibility);
+
+			neck.RotationDegrees = new Vector3(
+				Mathf.Clamp(neck.RotationDegrees.X, -80, 80),
+				neck.RotationDegrees.Y,
+				neck.RotationDegrees.Z
+			);
+		}
+	}
 
 	public override void _PhysicsProcess(double delta)
 	{

@@ -15,10 +15,10 @@ grow_vertical = 2
 
 [node name="Play" type="Button" parent="." unique_id=1608840263]
 layout_mode = 0
-offset_left = 447.0
-offset_top = 338.0
-offset_right = 660.0
-offset_bottom = 400.0
+offset_left = 437.83173
+offset_top = 320.0
+offset_right = 717.8317
+offset_bottom = 382.0
 theme_override_font_sizes/font_size = 27
 text = "Jogar"
 script = ExtResource("1_s2c3o")
@@ -30,10 +30,10 @@ anchor_left = 0.597
 anchor_top = 0.63000005
 anchor_right = 0.597
 anchor_bottom = 0.63000005
-offset_left = -268.74402
-offset_top = 11.759979
-offset_right = 2.2559814
-offset_bottom = 73.75998
+offset_left = -249.9123
+offset_top = -16.24002
+offset_right = 30.087708
+offset_bottom = 45.75998
 theme_override_font_sizes/font_size = 27
 text = "Configurações"
 script = ExtResource("2_s2c3o")
@@ -45,18 +45,18 @@ anchor_left = 0.597
 anchor_top = 0.63000005
 anchor_right = 0.597
 anchor_bottom = 0.63000005
-offset_left = -194.74402
-offset_top = 93.75998
-offset_right = -81.74402
-offset_bottom = 155.75998
+offset_left = -249.9123
+offset_top = 55.75998
+offset_right = 30.087708
+offset_bottom = 117.75998
 theme_override_font_sizes/font_size = 27
 text = "Sair
 "
 script = ExtResource("2_syfuq")
 
 [node name="IterationLogo" type="Sprite2D" parent="." unique_id=773027783]
-position = Vector2(556, 206)
-scale = Vector2(0.605919, 0.605919)
+position = Vector2(573.8317, 197.99997)
+scale = Vector2(0.76635504, 0.76635504)
 texture = ExtResource("3_s2c3o")
 
 [node name="Coment" type="Label" parent="." unique_id=304914468]
